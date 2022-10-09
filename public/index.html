@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zip Radius Search by Zip code</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body
+        style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+        "
+    >
+        <div>
+            <h1>Zip Radius Search using Zip Code (USA)</h1>
+            <p style="font-weight: bold">
+                API ->
+                <code
+                    style="
+                        background-color: black;
+                        color: white;
+                        display: inline-block;
+                        padding: 10px 15px;
+                    "
+                    >/api/search?zip={zipcode}&distance={e.g
+                    5}&type={mile/km}</code
+                >
+            </p>
+            <h3>
+                <h1>Note:-</h1>
+                Both <b>zip</b>, <b>distance</b> and <b>type</b> queiries are
+                required!!
+            </h3>
+            <h2>Usage:-</h2>
+            <p>zip: {zip code to search with}</p>
+            <p>distance: {radius distance in mile or km}</p>
+            <p>type: {mile or km according to your provided distance value}</p>
+            <h1>Sample example</h1>
+            <p>Try the below query-></p>
+            <a href="/api/search?zip=14466&distance=25&type=km"
+                >/api/search?zip=14466&distance=25&type=km</a
+            >
+            <h1>Response:-</h1>
+            <p>status: {either 'success' or 'failed'}</p>
+            <p>results: [{ zipcodes }]</p>
+        </div>
+    </body>
+</html>
