@@ -18,7 +18,7 @@ const converToMeter = (distance, type) => {
     return 0;
 };
 
-app.use(express.static("public"));
+app.use("/", express.static("public"));
 
 app.get("/api/search/", async (req, res) => {
     const type = req.query.type;
