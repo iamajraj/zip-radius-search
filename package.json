@@ -2,9 +2,10 @@
     "name": "zip-nearby",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "main.js",
     "scripts": {
-        "start": "nodemon main.js"
+        "dev": "nodemon main.js",
+        "start": "node main.js"
     },
     "keywords": [],
     "author": "",
