@@ -2,6 +2,8 @@ const zipnearby = require("./nearby");
 const express = require("express");
 const app = express();
 
+const PORT = process.env.PORT || 3000;
+
 const main = async (zip, distance) => {
     const nearbyZips = await zipnearby.near(zip, distance, {
         datafile: "zipcodes.csv",
@@ -46,6 +48,6 @@ app.get("/api/search/", async (req, res) => {
         });
 });
 
-app.listen(80, () => {
-    console.log("Listening on *80");
+app.listen(PORT, () => {
+    console.log(`Listening on *${PORT} 🚀`);
 });
